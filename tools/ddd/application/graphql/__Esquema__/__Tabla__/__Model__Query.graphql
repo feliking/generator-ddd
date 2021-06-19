@@ -1,0 +1,9 @@
+# Lista de __Tabla__s
+__Tabla__s(
+  limit: Int
+  page: Int
+  order: String
+  # Filtros que se van a aplicar desde el frontend
+): __Model__s
+# Obtener un objeto
+__Tabla__(id: ID!): __Model__

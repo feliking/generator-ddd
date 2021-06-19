@@ -1,0 +1,34 @@
+# Definición del tipo
+type __Model__ {
+  id: ID!
+  # Campos del modelo, ejemplo: nombre: String
+  
+  # Declaración de ID's foraneos, ejemplo: id_persona: Int
+ 
+  # Declaración de objetos foraneos, ejemplo: persona: Persona
+  
+  # Usuario que creo el registro
+  _user_created: Int
+  # Usuario que actualizó el registro
+  _user_updated: Int
+  # Fecha de creación del registro
+  _created_at: Date
+  # Fecha de actualización del registro
+  _updated_at: Date
+}
+
+# Crear __Tabla__
+input New__Model__ {
+  # Campos que recibiremos de la capa de presentación
+}
+
+# Editar __Tabla__
+input Edit__Model__ {
+  # Campos que recibiremos de la capa de presentación
+}
+
+# Paginación
+type __Model__s {
+  count: Int
+  rows: [__Model__]
+}

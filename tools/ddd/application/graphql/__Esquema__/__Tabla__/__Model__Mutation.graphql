@@ -1,0 +1,6 @@
+# Agregar __Tabla__
+__Tabla__Add(__Tabla__: New__Model__!): __Model__
+# Editar __Tabla__
+__Tabla__Edit(id: ID!, __Tabla__: Edit__Model__!): __Model__
+# Eliminar __Tabla__
+__Tabla__Delete(id: ID!): Delete
